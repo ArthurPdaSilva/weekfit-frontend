@@ -67,8 +67,10 @@ export default function TableContainer() {
       <Table.Footer>
         <Table.Row>
           <Table.Cell colSpan="7">
-            <Button as={Link} to="/edit" floated="right" color="green">
-              Compartilhar
+            <Button floated="right" color="red">
+              <a href="https://www.instagram.com/arthurp_sillva/" target="_blank" rel="noreferrer" style={{ color: 'white' }}>
+                Instagram do criador :)
+              </a>
             </Button>
           </Table.Cell>
         </Table.Row>
