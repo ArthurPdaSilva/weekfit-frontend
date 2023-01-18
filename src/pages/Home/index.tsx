@@ -7,9 +7,11 @@ export default function Home() {
   return (
     <>
       <HeaderContainer />
-      <Grid textAlign="center" style={{ height: '100vh' }} verticalAlign="middle">
-        <GridColumn style={{ maxWidth: '80vw' }}>
-          <Header size="huge">Rotina do Campeão </Header>
+      <Grid style={{ height: '100vh' }} verticalAlign="middle">
+        <GridColumn style={{ width: '100%' }}>
+          <Header size="huge" textAlign="center">
+            Rotina do Campeão
+          </Header>
           <TableContainer />
         </GridColumn>
       </Grid>
