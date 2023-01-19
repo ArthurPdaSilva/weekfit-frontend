@@ -48,11 +48,9 @@ export default function AuthProvider({ children }: { children: JSX.Element }) {
     if (response.data.error) window.alert(response.data.error);
     else {
       api.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`;
-      console.log(response.data.tableId);
       localStorage.setItem('@Auth:token', JSON.stringify(response.data.token));
       const user = { name: response.data.name, tableId: response.data.tableId } as UserType;
       localStorage.setItem('@Auth:user', JSON.stringify(user));
-      console.log(user);
       return user;
     }
   }

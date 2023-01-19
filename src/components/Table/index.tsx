@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Button, Input, Table, TableCell, TableRow } from 'semantic-ui-react';
+import { Button, Table, TableRow } from 'semantic-ui-react';
 import CellType from '../../@types/CellType';
 import { AuthContext } from '../../contexts/auth';
 import api from '../../services/api';
