@@ -10,7 +10,6 @@ type Props = {
 
 export default function Cell({ value, id }: Props) {
   const appContext = useContext(AuthContext);
-  const [name, setName] = useState('');
   const gymOptions = [
     { key: 'pt', value: 'Peito', text: 'Peito' },
     { key: 'ct', value: 'Costas', text: 'Costas' },
@@ -31,7 +30,7 @@ export default function Cell({ value, id }: Props) {
   const onUpdate = async function (value: string) {
     console.log(value);
     api.defaults.headers.common['Authorization'] = `Bearer ${appContext?.token}`;
-    await api.put(`/update-table/${id}`, { name: value }).then(() => alert('Foi'));
+    await api.put(`/update-table/${id}`, { name: value });
   };
 
   return (
