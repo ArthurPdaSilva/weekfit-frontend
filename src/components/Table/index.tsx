@@ -28,7 +28,7 @@ export default function TableContainer() {
   }, [setRowOne, setRowTwo, setRowThree, setRowFour]);
 
   return (
-    <Table celled size="small">
+    <Table celled unstackable>
       <Table.Header>
         <Table.Row>
           <Table.HeaderCell>Domingo</Table.HeaderCell>

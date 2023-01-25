@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { Dropdown, TableCell } from 'semantic-ui-react';
 import { AuthContext } from '../../contexts/auth';
 import api from '../../services/api';
