@@ -25,7 +25,7 @@ export default function TableContainer() {
       });
     }
     loadingCells();
-  }, [setRowOne, setRowTwo, setRowThree, setRowFour]);
+  }, []);
 
   return (
     <Table celled unstackable>
